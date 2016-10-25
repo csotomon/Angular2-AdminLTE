@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AdminModule } from './admin/admin.module';
 import { AdminComponent} from './admin/admin.component';
 import { TestComponent } from './test/test.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,11 +20,7 @@ import { TestComponent } from './test/test.component';
     FormsModule,
     HttpModule,
     AdminModule,
-    RouterModule.forRoot([
-      { path: '', component: TestComponent },
-      { path: 'admin', component: AdminComponent }
-      
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
