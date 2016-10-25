@@ -20,12 +20,17 @@
       "styles": [
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/morris.js/morris.css",
         "admin.less"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "../node_modules/admin-lte/dist/js/app.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",  
+        "../node_modules/admin-lte/dist/js/app.js",     
+         "../node_modules/raphael/raphael.min.js",       
+        "../node_modules/morris.js/morris.min.js",
+        "../node_modules/jquery-knob/dist/jquery.knob.min.js"
+        
       ],
       "environments": {
         "source": "environments/environment.ts",
