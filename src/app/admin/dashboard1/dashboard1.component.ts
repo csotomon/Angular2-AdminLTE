@@ -11,9 +11,11 @@ export class Dashboard1Component implements OnInit {
   areaChart : morris.GridChart;
   donutChart: morris.DonutChart;
   knob: JQuery;
+  calendar: JQuery;
 
-  constructor() { 
-     
+
+  ngAfterViewInit(){
+
   }
 
   ngOnInit() {
@@ -81,7 +83,25 @@ export class Dashboard1Component implements OnInit {
       //hideHover: 'auto'
     });
 
-    this.knob = jQuery('.knob').knob();
+    this.knob = jQuery(".knob").knob();
+    this.calendar = jQuery("#calendar").datepicker();
+
+    jQuery(".connectedSortable").sortable({
+      placeholder: "sort-highlight",
+      connectWith: ".connectedSortable",
+      handle: ".box-header, .nav-tabs",
+      forcePlaceholderSize: true,
+      zIndex: 999999
+    });
+    jQuery(".connectedSortable .box-header, .connectedSortable .nav-tabs-custom").css("cursor", "move");
+
+    jQuery(".todo-list").sortable({
+      placeholder: "sort-highlight",
+      handle: ".handle",
+      forcePlaceholderSize: true,
+      zIndex: 999999
+    });
+    
   }
 
 }

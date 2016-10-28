@@ -21,16 +21,22 @@
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/morris.js/morris.css",
+        "../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/ionicons/dist/css/ionicons.css",
+        "../node_modules/icheck/skins/flat/blue.css",
         "admin.less"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/jqueryui/jquery-ui.min.js",
+        "scripts.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",  
         "../node_modules/admin-lte/dist/js/app.js",     
          "../node_modules/raphael/raphael.min.js",       
         "../node_modules/morris.js/morris.min.js",
-        "../node_modules/jquery-knob/dist/jquery.knob.min.js"
-        
+        "../node_modules/jquery-knob/dist/jquery.knob.min.js",
+        "../node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
