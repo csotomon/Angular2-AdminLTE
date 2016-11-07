@@ -14,7 +14,7 @@ Installation
 - Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
 - Clone to your machine
 ```
-git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git
+git clone https://github.com/csotomon/Angular2-AdminLTE.git
 ```
 
 Browser Support
@@ -30,7 +30,7 @@ Contribution
 Contribution are always **welcome and recommended**! Here is how:
 
 - Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine ```git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git```
+- Clone to your machine ```git clone https://github.com/csotomon/Angular2-AdminLTE.git```
 - Make your changes
 - Create a pull request
 
