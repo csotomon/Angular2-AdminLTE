@@ -9,11 +9,13 @@ import { AdminModule } from './admin/admin.module';
 import { AdminComponent} from './admin/admin.component';
 import { TestComponent } from './test/test.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

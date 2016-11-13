@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
-
+  bodyClasses:string = "skin-blue sidebar-mini";
+  body = document.getElementsByTagName('body')[0];
+  
   constructor() { }
 
   ngOnInit() {
+    //add the the body classes
+    this.body.classList.add(this.bodyClasses);
+  }
+
+   ngOnDestroy() {
+    //remove the the body classes
+    this.body.classList.remove(this.bodyClasses);
   }
 
 }
