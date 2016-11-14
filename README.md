@@ -6,7 +6,7 @@ This is the **Angular2** version of **AdminLTE** -- is a fully responsive admin 
 **Download & Preview AndminLTE on [Almsaeed Studio](https://almsaeedstudio.com)**
 
 
-!["AdminLTE Presentation"] (https://almsaeedstudio.com/AdminLTE2.png "AdminLTE Presentation")
+!["AdminLTE Presentation"](https://almsaeedstudio.com/AdminLTE2.png "AdminLTE Presentation")
 
 Installation
 ------------
@@ -14,8 +14,19 @@ Installation
 - Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
 - Clone to your machine
 ```
-git clone https://github.com/csotomon/Angular2-AdminLTE.git
+git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git
 ```
+- Install Angular 2 Client.
+```
+npm install -g angular-cli
+```
+Installation
+------------
+- On the folder project
+```
+ng serve
+```
+- Navigate to [http://localhost:4200/](http://localhost:4200/)
 
 Browser Support
 ---------------
@@ -30,7 +41,7 @@ Contribution
 Contribution are always **welcome and recommended**! Here is how:
 
 - Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine ```git clone https://github.com/csotomon/Angular2-AdminLTE.git```
+- Clone to your machine ```git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git```
 - Make your changes
 - Create a pull request
 
