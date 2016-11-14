@@ -20,7 +20,7 @@ git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git
 ```
 npm install -g angular-cli
 ```
-Installation
+Running the application
 ------------
 - On the folder project
 ```
