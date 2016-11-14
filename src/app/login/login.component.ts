@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router }   from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -11,7 +13,7 @@ export class LoginComponent implements OnInit {
   body = document.getElementsByTagName('body')[0];
   icheck: JQuery;
 
-  constructor() { 
+  constructor(private router:Router) { 
   }
 
   ngOnInit() {
@@ -34,6 +36,10 @@ export class LoginComponent implements OnInit {
   }
 
   ngAfterViewInit() {
+  }
+
+  gotoAdmin(){
+    this.router.navigate(['/admin']);
   }
 
 }

@@ -6,7 +6,7 @@
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
-    <form action="../../index2.html" method="post">
+    <form>
       <div class="form-group has-feedback">
         <input type="email" class="form-control" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -25,7 +25,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          <button type="button" class="btn btn-primary btn-block btn-flat" (click)="gotoAdmin()">Sign In</button>
         </div>
         <!-- /.col -->
       </div>
@@ -39,7 +39,7 @@
         Google+</a>
     </div>
     <!-- /.social-auth-links -->
-
+    <a routerLink="/admin">admin</a><br>
     <a href="#">I forgot my password</a><br>
     <a href="register.html" class="text-center">Register a new membership</a>
 
