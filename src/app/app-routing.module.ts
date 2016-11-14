@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
   imports: [
     RouterModule.forRoot([
       { path: '', component: LoginComponent },
+      { path: 'login', component: LoginComponent },
       { path: 'admin', component: AdminComponent }
     ])
   ],
