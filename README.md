@@ -18,7 +18,12 @@ Installation
 npm install -g @angular/cli
 ```
 - Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git
 ```
+
+- Install the packages
+```bash
 git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git
 cd Angular2-AdminLTE
 npm install
@@ -59,4 +64,4 @@ Angular2-AdminLTE is an open source project by that is licensed under [MIT](http
 
  Credits
 -------------
-[Almsaeed Studio](https://almsaeedstudio.com).
+[Almsaeed Studio](https://almsaeedstudio.com)
