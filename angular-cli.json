@@ -30,16 +30,16 @@
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/jqueryui/jquery-ui.min.js",
         "scripts.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js",  
-        "../node_modules/admin-lte/dist/js/app.js",     
-         "../node_modules/raphael/raphael.min.js",       
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../node_modules/admin-lte/dist/js/app.js",
+         "../node_modules/raphael/raphael.min.js",
         "../node_modules/morris.js/morris.min.js",
         "../node_modules/jquery-knob/dist/jquery.knob.min.js",
         "../node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
          "../node_modules/iCheck/icheck.min.js"
       ],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
