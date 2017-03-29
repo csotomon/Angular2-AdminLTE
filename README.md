@@ -18,7 +18,7 @@ Installation
 npm install -g @angular/cli
 ```
 - Clone the repository
-```bash
+```
 git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git
 cd Angular2-AdminLTE
 npm install
