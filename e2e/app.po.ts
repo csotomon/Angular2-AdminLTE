@@ -1,6 +1,6 @@
-import { browser, element, by } from 'protractor';
+import { browser, by, element } from 'protractor';
 
-export class Angular2AdminLTEPage {
+export class AngularAdminLTEPage {
   navigateTo() {
     return browser.get('/');
   }

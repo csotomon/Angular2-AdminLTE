@@ -1,14 +1,14 @@
-import { Angular2AdminLTEPage } from './app.po';
+import { AngularAdminLTEPage } from './app.po';
 
-describe('angular2-admin-lte App', function() {
-  let page: Angular2AdminLTEPage;
+describe('angular-admin-lte App', () => {
+  let page: AngularAdminLTEPage;
 
   beforeEach(() => {
-    page = new Angular2AdminLTEPage();
+    page = new AngularAdminLTEPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
