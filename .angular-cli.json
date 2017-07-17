@@ -21,15 +21,20 @@
       "styles": [
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-         "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
         "../node_modules/ionicons/dist/css/ionicons.css",
-        "_variables.less"
+        "_variables.less",
+        "../node_modules/icheck/skins/flat/blue.css",
+        "../node_modules/morris.js/morris.css"
       ],
       "scripts": [
-         "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/jqueryui/jquery-ui.js",
+        "scripts.js",
         "../node_modules/bootstrap/dist/js/bootstrap.js",
-         "scripts.js",
-         "../node_modules/admin-lte/dist/js/app.js"
+        "../node_modules/admin-lte/dist/js/app.js",
+        "../node_modules/raphael/raphael.js",
+        "../node_modules/morris.js/morris.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

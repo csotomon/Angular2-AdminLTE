@@ -1,11 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: 'app-starter',
-  templateUrl: './starter.component.html',
-  styleUrls: ['./starter.component.css']
+  selector: 'app-admin',
+  templateUrl: './admin.component.html',
+  styleUrls: ['./admin.component.css']
 })
-export class StarterComponent implements OnInit, OnDestroy {
+export class AdminComponent implements OnInit, OnDestroy {
 
   bodyClasses = 'skin-blue sidebar-mini';
   body: HTMLBodyElement = document.getElementsByTagName('body')[0];
