@@ -22,7 +22,7 @@
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
         "../node_modules/font-awesome/css/font-awesome.css",
-        "../node_modules/ionicons/dist/css/ionicons.css",
+        "../node_modules/ionicons/css/ionicons.css",
         "_variables.less",
         "../node_modules/icheck/skins/flat/blue.css",
         "../node_modules/morris.js/morris.css"
