@@ -1,3 +1,5 @@
+import { AdminModule } from './admin/admin.module';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -14,6 +16,7 @@ import { AdminLeftSideComponent } from './admin/admin-left-side/admin-left-side.
 import { AdminContentComponent } from './admin/admin-content/admin-content.component';
 import { AdminFooterComponent } from './admin/admin-footer/admin-footer.component';
 import { AdminControlSidebarComponent } from './admin/admin-control-sidebar/admin-control-sidebar.component';
+import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboard1.component';
 
 @NgModule({
   declarations: [
@@ -23,16 +26,12 @@ import { AdminControlSidebarComponent } from './admin/admin-control-sidebar/admi
     StarterLeftSideComponent,
     StarterContentComponent,
     StarterFooterComponent,
-    StarterControlSidebarComponent,
-    AdminComponent,
-    AdminHeaderComponent,
-    AdminLeftSideComponent,
-    AdminContentComponent,
-    AdminFooterComponent,
-    AdminControlSidebarComponent
+    StarterControlSidebarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
