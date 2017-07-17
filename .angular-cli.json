@@ -20,15 +20,14 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "_variables.less",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
          "../node_modules/font-awesome/css/font-awesome.css",
-        "../node_modules/ionicons/dist/css/ionicons.css"
+        "../node_modules/ionicons/dist/css/ionicons.css",
+        "_variables.less"
       ],
       "scripts": [
          "../node_modules/jquery/dist/jquery.js",
         "../node_modules/bootstrap/dist/js/bootstrap.js",
-
          "scripts.js",
          "../node_modules/admin-lte/dist/js/app.js"
       ],
