@@ -20,11 +20,17 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "_variables.less"
+        "_variables.less",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+         "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/ionicons/dist/css/ionicons.css"
       ],
       "scripts": [
-         "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+         "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+
+         "scripts.js",
+         "../node_modules/admin-lte/dist/js/app.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
