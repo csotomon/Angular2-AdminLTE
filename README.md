@@ -8,8 +8,11 @@ INSTALLATION
 Clone the repository:
 ```
 git clone https://github.com/almasaeed2010/AdminLTE.git
-
+```
+```
 Run npm install
+```
+```
 Run ng serve
 ```
 
