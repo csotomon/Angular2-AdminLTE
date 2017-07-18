@@ -1,12 +1,9 @@
 Introduction
 ============
+**Angular AdminLTE** -- is a fully responsive admin template. Based on **[Bootstrap 3](https://github.com/twbs/bootstrap)** . And **[Almsaeed Studio](https://almsaeedstudio.com)** template. 
 
 
-**Angular AdminLTE** -- is a fully responsive admin template. Based on **[Bootstrap 3](https://github.com/twbs/bootstrap)** framework. Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops. Check out the live preview now and see for yourself.
-
-**Download & Preview on [Almsaeed Studio](https://almsaeedstudio.com)**
-
-Looking for Premium Templates?
+INSTALLATION
 ------------------------------
 **Almsaeed studio just opened a new premium templates page. Hand picked to insure the best quality and the most affordable prices. Visit https://almsaeedstudio.com/premium for more information.**
 
