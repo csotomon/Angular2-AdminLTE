@@ -14,7 +14,8 @@ import { RouterModule } from '@angular/router';
         children: [
           {
             path: '',
-            component: AdminDashboard1Component
+            redirectTo: 'dashboard1',
+            pathMatch: 'full'
           },
           {
             path: 'dashboard1',
