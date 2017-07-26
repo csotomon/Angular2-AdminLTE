@@ -31,7 +31,8 @@ Running the application
 ```
 ng serve
 ```
-- Navigate to [http://localhost:4200/](http://localhost:4200/)
+- For starter page Navigate to [http://localhost:4200/](http://localhost:4200/)
+- For admin page Navigate to [http://localhost:4200/admin](http://localhost:4200/admin)
 
 Browser Support
 ---------------
