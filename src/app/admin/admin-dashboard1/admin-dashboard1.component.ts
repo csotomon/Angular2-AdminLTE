@@ -7,6 +7,8 @@ import { } from 'jqueryui';
 import { } from 'daterangepicker';
 import { } from 'jquery.slimscroll';
 import * as moment from 'moment';
+// Variable in assets/js/scripts.js file
+declare var AdminLTE: any;
 
 @Component({
   selector: 'app-admin-dashboard1',
@@ -22,6 +24,8 @@ export class AdminDashboard1Component implements OnInit {
 
   constructor() { }
   ngOnInit() {
+     // Update the AdminLTE layouts
+    AdminLTE.init();
     // Make the dashboard widgets sortable Using jquery UI
     jQuery('.connectedSortable').sortable({
       placeholder: 'sort-highlight',
