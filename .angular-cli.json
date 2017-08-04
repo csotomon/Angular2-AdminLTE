@@ -33,7 +33,6 @@
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
         "../node_modules/jqueryui/jquery-ui.js",
-        "scripts.js",
         "../node_modules/bootstrap/dist/js/bootstrap.js",
         "../node_modules/raphael/raphael.js",
         "../node_modules/morris.js/morris.js",
@@ -45,7 +44,8 @@
         "../node_modules/jquery-slimscroll/jquery.slimscroll.js",
         "../node_modules/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.all.js",
         "../node_modules/icheck/icheck.js",
-        "../node_modules/admin-lte/dist/js/app.js"
+        "../node_modules/admin-lte/dist/js/app.js",
+        "assets/js/scripts.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
