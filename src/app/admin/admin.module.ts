@@ -9,6 +9,7 @@ import { AdminComponent } from './admin.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminDashboard2Component } from './admin-dashboard2/admin-dashboard2.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { AdminDashboard2Component } from './admin-dashboard2/admin-dashboard2.co
     AdminFooterComponent,
     AdminControlSidebarComponent,
     AdminDashboard1Component,
-    AdminDashboard2Component
+    AdminDashboard2Component,
+    AdminLoginComponent
   ],
   exports: [AdminComponent]
 })
