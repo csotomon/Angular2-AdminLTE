@@ -10,11 +10,28 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminDashboard2Component } from './admin-dashboard2/admin-dashboard2.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { HttpModule } from '@angular/http';
+import { BrowserModule } from '@angular/platform-browser';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { FormsModule }    from '@angular/forms';
+
+// used to create fake backend
+import { MockBackend, MockConnection } from '@angular/http/testing';
+import { BaseRequestOptions } from '@angular/http';
+
+import { AlertComponent } from '../_directives/index';
+import { AuthGuard } from '../_guards/index';
+import { AlertService, AuthenticationService, UserService } from '../_services/index';
+
 
 @NgModule({
   imports: [
+    BrowserModule,
+    HttpModule,
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    FormsModule
   ],
   declarations: [
     AdminComponent,
@@ -25,8 +42,19 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     AdminControlSidebarComponent,
     AdminDashboard1Component,
     AdminDashboard2Component,
-    AdminLoginComponent
+    AdminLoginComponent,
+    AlertComponent
   ],
-  exports: [AdminComponent]
+  providers: [
+    AuthGuard,
+    AlertService,
+    AuthenticationService,
+    UserService,
+    BaseRequestOptions
+  ],
+  exports: [AdminComponent],
+  bootstrap: [ AdminComponent ]
 })
 export class AdminModule { }
+
+platformBrowserDynamic().bootstrapModule(AdminModule);
