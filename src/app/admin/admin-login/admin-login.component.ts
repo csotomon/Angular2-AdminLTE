@@ -26,6 +26,7 @@ export class AdminLoginComponent implements OnInit {
   data = {};
   api_action = "auth";
   url = "http://localhost/mediawiki/api.php?action="+this.api_action+"&format=json";
+  redirectUrl = "/admin";
 
   constructor(private _http: Http, private router: Router) { }
 
@@ -37,7 +38,7 @@ export class AdminLoginComponent implements OnInit {
   login_admin() {
     //   alert("function Called")
       this.loading = true;
-      this.data = {username: this.model.username, password: this.model.password}
+      this.data = JSON.stringify({});
       console.log(this.data);
       this.url = this.url+"&username="+btoa(this.model.username)+"&password="+btoa(this.model.password);
       console.log(this.url);
@@ -46,7 +47,11 @@ export class AdminLoginComponent implements OnInit {
       return this._http.post(this.url, this.data, options)
       .map((response: Response) => {
           console.log(response);
-          alert("Success");          
+          // alert("Success");
+          if (this.redirectUrl) {
+            this.router.navigate([this.redirectUrl]);
+            this.redirectUrl = null;
+          }
       })
       .subscribe(result => {
         console.log(result);
