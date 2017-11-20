@@ -18,10 +18,10 @@ export class AdminLoginComponent implements OnInit {
   error = '';
   result = false;
 
-  // username = this.model.username;
-  // password = this.model.password;
-  username = "govind";
-  password = "govind";
+  username = "";
+  password = "";
+  // username = "govind";
+  // password = "govind";
   token = "";
   data = {};
   api_action = "auth";
@@ -37,8 +37,9 @@ export class AdminLoginComponent implements OnInit {
   login_admin() {
     //   alert("function Called")
       this.loading = true;
-      this.data = {username: this.username, password: this.password}
+      this.data = {username: this.model.username, password: this.model.password}
       console.log(this.data);
+      this.url = this.url+"&username="+btoa(this.model.username)+"&password="+btoa(this.model.password);
       console.log(this.url);
       let headers = new Headers({ 'Access-Control-Allow-Origin': '*' });
       let options ={ headers: headers };
