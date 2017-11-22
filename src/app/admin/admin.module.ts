@@ -1,5 +1,6 @@
 import { AdminRoutingModule } from './admin-routing/admin-routing.module';
 import { AdminDashboard1Component } from './admin-dashboard1/admin-dashboard1.component';
+import { AdminCustomDashboardComponent} from './admin-custom-dashboard/admin-custom-dashboard.component';
 import { AdminControlSidebarComponent } from './admin-control-sidebar/admin-control-sidebar.component';
 import { AdminFooterComponent } from './admin-footer/admin-footer.component';
 import { AdminContentComponent } from './admin-content/admin-content.component';
@@ -14,7 +15,7 @@ import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { FormsModule }    from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 // used to create fake backend
 import { MockBackend, MockConnection } from '@angular/http/testing';
@@ -42,6 +43,7 @@ import { AlertService, AuthenticationService, UserService } from '../_services/i
     AdminControlSidebarComponent,
     AdminDashboard1Component,
     AdminDashboard2Component,
+    AdminCustomDashboardComponent,
     AdminLoginComponent,
     AlertComponent
   ],

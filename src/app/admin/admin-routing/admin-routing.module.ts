@@ -1,5 +1,6 @@
 import { AdminDashboard2Component } from './../admin-dashboard2/admin-dashboard2.component';
 import { AdminDashboard1Component } from './../admin-dashboard1/admin-dashboard1.component';
+import { AdminCustomDashboardComponent} from './../admin-custom-dashboard/admin-custom-dashboard.component';
 import { AdminLoginComponent } from './../admin-login/admin-login.component';
 import { AdminComponent } from './../admin.component';
 import { NgModule, Component } from '@angular/core';
@@ -26,6 +27,10 @@ import { RouterModule } from '@angular/router';
           {
             path: 'dashboard2',
             component: AdminDashboard2Component
+          },
+          {
+            path: 'custom-dashboard',
+            component: AdminCustomDashboardComponent
           }
         ]
       }
