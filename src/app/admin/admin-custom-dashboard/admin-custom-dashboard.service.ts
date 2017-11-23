@@ -9,7 +9,7 @@ export class AdminCustomDashboardService {
   constructor( private http: Http ) {}
 
   getValues() {
-    return this.http.get('http://localhost/api.php?action=query&list=usercheck&format=json')
+    return this.http.get('http://localhost/mediawiki/api.php?action=query&list=userdata&format=json')
       .map(res => res.json());
   }
 }

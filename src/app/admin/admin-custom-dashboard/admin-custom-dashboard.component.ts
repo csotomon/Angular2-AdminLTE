@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 import { } from 'jquery';
 import { } from 'morris.js';
 import { } from 'jquery-knob';
@@ -10,6 +10,7 @@ import * as moment from 'moment';
 import { Http, Headers, Response } from '@angular/http';
 import { AdminCustomDashboardService} from './admin-custom-dashboard.service';
 import {Observable} from 'rxjs/Observable';
+import {el} from '@angular/platform-browser/testing/src/browser_util';
 
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
@@ -33,19 +34,46 @@ export class AdminCustomDashboardComponent implements OnInit {
   url = 'http://localhost/api.php?action=query&list=usercheck&format=json';
   private resultjson: any;
   private usercheck: string;
-
   // public getdata$: Observable<any>;
 
 
 
-  constructor(/*private _http: Http*/private adminCustomDashboardService: AdminCustomDashboardService) { }
+  constructor(private _http: Http, private adminCustomDashboardService: AdminCustomDashboardService) { }
+
+
   ngOnInit() {
+
     // this.getdata$ = this.adminCustomDashboardService.getValues();
     //
     // console.log(this.getdata$);
 
     // Update the AdminLTE layouts
     AdminLTE.init();
+
+    // Loding barcharts:
+
+  /*  return this._http.get('http://localhost/mediawiki/api.php?action=query&list=usercheck&format=json')
+      .map(res => res.json())
+      .subscribe(
+        data => this.getdata = JSON.stringify(data['usercheck']),
+        error => alert(error),
+        () => console.log('Finished')
+      );
+
+    // noinspection UnreachableCodeJS
+    this.parsedata = JSON.parse(this.getdata);
+    // ({this.usercheck} = this.parsedata);
+
+    this.barchart = Morris.Bar({
+      element: 'article-chart',
+      resize: true,
+      data: this.parsedata,
+      xkey: 'article_name',
+      ykeys: ['times_viewed'],
+      labels: ['No. of times Viewed'],
+      hideHover: 'auto'
+    });*/
+
     // Make the dashboard widgets sortable Using jquery UI
     jQuery('.connectedSortable').sortable({
       placeholder: 'sort-highlight',
@@ -170,22 +198,25 @@ export class AdminCustomDashboardComponent implements OnInit {
     });*/
 
 
-
-    this.login_admin();
-
-
-
-  }
-
-
-
-  login_admin() {
     this.adminCustomDashboardService.getValues().subscribe(
       data => this.getdata = JSON.stringify(data['usercheck']),
       error => alert(error),
       () => console.log('Finished')
     );
 
+    setTimeout(() => {
+      if (this.getdata !== undefined && this.getdata.length > 0) {
+        this.login_admin();
+      }
+    },2000);
+
+  }
+
+  login_admin() {
+    this.populate_bargraph();
+  }
+
+  populate_bargraph() {
     this.parsedata = JSON.parse(this.getdata);
     // ({this.usercheck} = this.parsedata);
 

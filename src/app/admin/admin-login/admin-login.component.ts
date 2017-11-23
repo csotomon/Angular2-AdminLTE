@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Directive, Component, OnInit, Input} from '@angular/core';
 import { Http, Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AlertService, AuthenticationService } from '../../_services/index';
+import { error } from 'selenium-webdriver';
 
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
@@ -15,48 +16,58 @@ declare var AdminLTE: any;
 export class AdminLoginComponent implements OnInit {
   model: any = {};
   loading = false;
-  error = '';
+  error_data = '';
   result = false;
+  invalid_data = false;
 
-  username = "";
-  password = "";
-  // username = "govind";
-  // password = "govind";
-  token = "";
-  data = {};
-  api_action = "auth";
-  url = "http://localhost/mediawiki/api.php?action="+this.api_action+"&format=json";
-  redirectUrl = "/admin";
+  username = '';
+  password = '';
+  token = '';
+  data = '';
+  login_error = '';
+  api_action = 'auth';
+  url = 'http://localhost/mediawiki/api.php?action=' + this.api_action;
+  redirectUrl = '/admin';
 
   constructor(private _http: Http, private router: Router) { }
 
   ngOnInit() {
-     // Actualiza la barra latera y el footer
+    // Actualiza la barra latera y el footer
     // AdminLTE.init();
   }
-  
+
   login_admin() {
-    //   alert("function Called")
-      this.loading = true;
-      this.data = JSON.stringify({});
-      console.log(this.data);
-      this.url = this.url+"&username="+btoa(this.model.username)+"&password="+btoa(this.model.password);
-      console.log(this.url);
-      let headers = new Headers({ 'Access-Control-Allow-Origin': '*' });
-      let options ={ headers: headers };
-      return this._http.post(this.url, this.data, options)
-      .map((response: Response) => {
-          console.log(response);
-          // alert("Success");
-          if (this.redirectUrl) {
+    //   alert('function Called')
+    this.loading = true;
+    this.invalid_data = false;
+    this.data = JSON.stringify({});
+    this.url = this.url + '&username=' + btoa(this.model.username) + '&password=' + btoa(this.model.password) + '&format=json';
+    const headers = new Headers({ 'Access-Control-Allow-Origin': '*' });
+    const options = { headers: headers };
+    return this._http.get(this.url)
+      .map(res => res.json())
+      .subscribe(result => {
+          this.data = JSON.parse(JSON.stringify(result['auth']));
+          console.log(this.data);
+          if (this.data['u_authenticate'] === 1) {
+            localStorage.setItem('currentUser', this.data['u_authenticate']);
             this.router.navigate([this.redirectUrl]);
             this.redirectUrl = null;
+          } else {
+            this.loading = false;
+            this.login_error = 'Invalid Username / Password.';
+            this.invalid_data = true;
+            return false;
           }
-      })
-      .subscribe(result => {
-        console.log(result);
-    });
-
+        },
+        error => {
+          this.loading = false;
+          this.login_error = 'Server Error.';
+          this.invalid_data = true;
+          // console.log(error);
+          return false;
+        }
+        // () => console.log(JSON.parse(this.data))
+      );
   }
-  
 }

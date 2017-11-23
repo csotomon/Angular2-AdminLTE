@@ -17,12 +17,13 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { FormsModule } from '@angular/forms';
 
+import { AuthGuard } from './_guards/guard';
+
 // used to create fake backend
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
 
 import { AlertComponent } from '../_directives/index';
-import { AuthGuard } from '../_guards/index';
 import { AlertService, AuthenticationService, UserService } from '../_services/index';
 
 
