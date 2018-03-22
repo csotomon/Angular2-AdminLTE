@@ -21,9 +21,13 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@types/icheck": "^0.8.29",
     "admin-lte": "^2.4.3",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "icheck": "^1.0.2",
+    "ionicons": "^3.0.0",
     "jquery": "^3.3.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
