@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "/node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map",
         "styles.css",
         "_variables.less"
       ],
