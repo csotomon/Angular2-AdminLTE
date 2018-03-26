@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { } from 'jquery';
 import { } from 'icheck';
+import { Router } from '@angular/router';
 // declare var jQuery: any;
 
 @Component({
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   icheck: JQuery;
   body: HTMLBodyElement = document.getElementsByTagName('body')[0];
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
@@ -32,6 +33,10 @@ export class LoginComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     // remove the the body classes
     this.body.classList.remove('login-page');
+  }
+
+  sigIn() {
+    this.router.navigate(['/starter']);
   }
 
 }

@@ -21,6 +21,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@types/bootstrap": "^3.3.39",
     "@types/icheck": "^0.8.29",
     "admin-lte": "^2.4.3",
     "bootstrap": "^3.3.7",

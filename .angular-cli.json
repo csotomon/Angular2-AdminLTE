@@ -24,7 +24,10 @@
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/icheck/icheck.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../node_modules/icheck/icheck.js",
+        "../node_modules/admin-lte/dist/js/adminlte.js",
+        "assets/js/scripts.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
