@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angular-admin-lte"
+    "name": "angular2-admin-lte"
   },
   "apps": [
     {
@@ -20,32 +20,13 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "../node_modules/font-awesome/css/font-awesome.css",
-        "../node_modules/ionicons/dist/css/ionicons.css",
-        "_variables.less",
-        "../node_modules/icheck/skins/flat/blue.css",
-        "../node_modules/morris.js/morris.css",
-        "../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css",
-        "../node_modules/admin-lte/plugins/daterangepicker/daterangepicker.css",
-        "../node_modules/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.css"
+        "_variables.less"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/jqueryui/jquery-ui.js",
         "../node_modules/bootstrap/dist/js/bootstrap.js",
-        "../node_modules/raphael/raphael.js",
-        "../node_modules/morris.js/morris.js",
-        "../node_modules/jquery-sparkline/jquery.sparkline.js",
-        "../node_modules/jquery-knob/dist/jquery.knob.min.js",
-        "../node_modules/moment/moment.js",
-        "../node_modules/daterangepicker/daterangepicker.js",
-        "../node_modules/bootstrap-datepicker/js/bootstrap-datepicker.js",
-        "../node_modules/jquery-slimscroll/jquery.slimscroll.js",
-        "../node_modules/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.all.js",
         "../node_modules/icheck/icheck.js",
-        "../node_modules/admin-lte/dist/js/app.js",
-        "assets/js/adminLTEOptions.js",
+        "../node_modules/admin-lte/dist/js/adminlte.js",
         "assets/js/scripts.js"
       ],
       "environmentSource": "environments/environment.ts",
@@ -62,13 +43,16 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json"
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
     },
     {
-      "project": "src/tsconfig.spec.json"
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
     },
     {
-      "project": "e2e/tsconfig.e2e.json"
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
     }
   ],
   "test": {

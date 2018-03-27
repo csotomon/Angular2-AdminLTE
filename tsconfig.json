@@ -10,10 +10,10 @@
     "target": "es5",
     "typeRoots": [
       "node_modules/@types",
-      "../node_modules/moment"
+      "@types"
     ],
     "lib": [
-      "es2016",
+      "es2017",
       "dom"
     ]
   }
