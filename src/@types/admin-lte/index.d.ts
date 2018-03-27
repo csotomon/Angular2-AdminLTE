@@ -1,19 +1,11 @@
 // Type definitions for AdminLTE v0.1
-// TypeScript Version: 2.3
+// TypeScript Version: 2.6.2
 
 /// <reference types="jquery"/>
-
-declare namespace layout{
-
-}
 
 interface LayoutOptions {
 	slimscroll?: boolean;
 	resetHeight?: boolean;
-}
-
-interface AdminLTELayout{
-  activate();
 }
 
 interface JQuery {
