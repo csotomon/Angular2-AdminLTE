@@ -14,6 +14,13 @@ import { StarterControlSidebarComponent } from './starter-control-sidebar/starte
     CommonModule,
     StarterRoutingModule
   ],
-  declarations: [StarterComponent, StarterHeaderComponent, StarterSidebarComponent, StarterContentComponent, StarterFooterComponent, StarterControlSidebarComponent]
+  declarations: [
+    StarterComponent,
+    StarterHeaderComponent,
+    StarterSidebarComponent,
+    StarterContentComponent,
+    StarterFooterComponent,
+    StarterControlSidebarComponent
+  ]
 })
 export class StarterModule { }
