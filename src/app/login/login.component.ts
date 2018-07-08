@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     // add the the body classes
+    this.body.classList.add('hold-transition');
     this.body.classList.add('login-page');
 
     // call iCheck
@@ -32,6 +33,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     // remove the the body classes
+    this.body.classList.remove('hold-transition');
     this.body.classList.remove('login-page');
   }
 
