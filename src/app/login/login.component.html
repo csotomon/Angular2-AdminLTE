@@ -7,7 +7,7 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="../../index2.html" method="post">
+      <form >
         <div class="form-group has-feedback">
           <input type="email" class="form-control" placeholder="Email">
           <span class="fa fa-envelope form-control-feedback"></span>
@@ -26,7 +26,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block btn-flat" (click)="sigIn()">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
@@ -34,10 +34,10 @@
 
       <div class="social-auth-links text-center mb-3">
         <p>- OR -</p>
-        <a href="" class="btn btn-block btn-primary">
+        <a href="" class="btn btn-block btn-primary" (click)="sigIn()">
           <i class="fa fa-facebook mr-2"></i> Sign in using Facebook
         </a>
-        <a href="" class="btn btn-block btn-danger">
+        <a href="" class="btn btn-block btn-danger" (click)="sigIn()">
           <i class="fa fa-google-plus mr-2"></i> Sign in using Google+
         </a>
       </div>

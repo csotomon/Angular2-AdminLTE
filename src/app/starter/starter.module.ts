@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { StarterRoutingModule } from './starter-routing.module';
 import { StarterComponent } from './starter.component';
-import { StarterHeaderComponent } from './starter-header/starter-header.component';
-import { StarterSidebarComponent } from './starter-sidebar/starter-sidebar.component';
+import { StarterNavbarComponent } from './starter-navbar/starter-navbar.component';
+import { StarterMainSidebarComponent } from './starter-main-sidebar/starter-main-sidebar.component';
 import { StarterContentComponent } from './starter-content/starter-content.component';
-import { StarterFooterComponent } from './starter-footer/starter-footer.component';
 import { StarterControlSidebarComponent } from './starter-control-sidebar/starter-control-sidebar.component';
+import { StarterFooterComponent } from './starter-footer/starter-footer.component';
 
 @NgModule({
   imports: [
@@ -16,11 +16,11 @@ import { StarterControlSidebarComponent } from './starter-control-sidebar/starte
   ],
   declarations: [
     StarterComponent,
-    StarterHeaderComponent,
-    StarterSidebarComponent,
+    StarterNavbarComponent,
+    StarterMainSidebarComponent,
     StarterContentComponent,
+    StarterControlSidebarComponent,
     StarterFooterComponent,
-    StarterControlSidebarComponent
   ]
 })
 export class StarterModule { }
