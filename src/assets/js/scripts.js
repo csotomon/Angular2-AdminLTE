@@ -25,6 +25,9 @@ var AdminLTE = (function () {
     },
     loadSparkline: (selector, values, options)=>{
       return $(selector).sparkline(values, options);
+    },
+    loadVectorMap: (selector, options) => {
+      return $(selector).vectorMap(options);
     }
 
   }

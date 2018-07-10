@@ -29,7 +29,8 @@
               "node_modules/morris.js/morris.css",
               "node_modules/admin-lte/plugins/datepicker/datepicker3.css",
               "node_modules/daterangepicker/daterangepicker.css",
-              "node_modules/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css"
+              "node_modules/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css",
+              "src/assets/css/jvectormap.css"
             ],
             "scripts": [
 
@@ -48,7 +49,9 @@
               "node_modules/jquery-knob/dist/jquery.knob.min.js",
               "node_modules/jquery-slimscroll/jquery.slimscroll.min.js",
               "node_modules/fastclick/lib/fastclick.js",
-              "node_modules/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"
+              "node_modules/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js",
+              "node_modules/admin-lte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
+              "node_modules/admin-lte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"
             ]
           },
           "configurations": {
