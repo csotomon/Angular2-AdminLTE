@@ -7,12 +7,13 @@ import { ThemeMainSidebarComponent } from './theme-main-sidebar/theme-main-sideb
 import { ThemeContentComponent } from './theme-content/theme-content.component';
 import { ThemeFooterComponent } from './theme-footer/theme-footer.component';
 import { ThemeControlSidebarComponent } from './theme-control-sidebar/theme-control-sidebar.component';
+import { ThemeDashboardv1Component } from './theme-dashboardv1/theme-dashboardv1.component';
 
 @NgModule({
   imports: [
     CommonModule,
     ThemeRoutingModule
   ],
-  declarations: [ThemeComponent, ThemeNavbarComponent, ThemeMainSidebarComponent, ThemeContentComponent, ThemeFooterComponent, ThemeControlSidebarComponent]
+  declarations: [ThemeComponent, ThemeNavbarComponent, ThemeMainSidebarComponent, ThemeContentComponent, ThemeFooterComponent, ThemeControlSidebarComponent, ThemeDashboardv1Component]
 })
 export class ThemeModule { }

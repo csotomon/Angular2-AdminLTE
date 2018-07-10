@@ -25,15 +25,30 @@
               "src/scss/_variables.scss",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/ionicons/dist/css/ionicons.min.css",
-              "node_modules/icheck/skins/square/blue.css"
-
+              "node_modules/icheck/skins/square/blue.css",
+              "node_modules/morris.js/morris.css",
+              "node_modules/admin-lte/plugins/datepicker/datepicker3.css",
+              "node_modules/daterangepicker/daterangepicker.css",
+              "node_modules/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css"
             ],
             "scripts": [
+
               "node_modules/jquery/dist/jquery.js",
-              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/jqueryui/jquery-ui.min.js",
+              "node_modules/raphael/raphael.js",
+              "node_modules/morris.js/morris.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/moment/moment.js",
               "node_modules/icheck/icheck.js",
               "node_modules/admin-lte/dist/js/adminlte.js",
-              "src/assets/js/scripts.js"
+              "src/assets/js/scripts.js",
+              "node_modules/admin-lte/plugins/datepicker/bootstrap-datepicker.js",
+              "node_modules/daterangepicker/daterangepicker.js",
+              "node_modules/jquery-sparkline/jquery.sparkline.min.js",
+              "node_modules/jquery-knob/dist/jquery.knob.min.js",
+              "node_modules/jquery-slimscroll/jquery.slimscroll.min.js",
+              "node_modules/fastclick/lib/fastclick.js",
+              "node_modules/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"
             ]
           },
           "configurations": {

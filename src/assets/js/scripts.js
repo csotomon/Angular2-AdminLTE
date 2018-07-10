@@ -19,6 +19,13 @@ var AdminLTE = (function () {
         }
         $controlSidebar.fix()
       });*/
+    },
+    loadWysihtml5: (selector)=>{
+      return $(selector).wysihtml5();
+    },
+    loadSparkline: (selector, values, options)=>{
+      return $(selector).sparkline(values, options);
     }
+
   }
 })(AdminLTE || {});
