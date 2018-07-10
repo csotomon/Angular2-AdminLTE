@@ -1,4 +1,4 @@
-**THE 2.4.3 VERSION IS UNDER DEVELOPMENT, CHECK [V2.4.3 BRANCH](https://github.com/csotomon/Angular2-AdminLTE/tree/v2.4.3)**
+**THE 3.0.0 VERSION IS UNDER DEVELOPMENT, CHECK [V3.0.0 BRANCH](https://github.com/csotomon/Angular2-AdminLTE/tree/v3.0.0)**
 
 
 Introduction
