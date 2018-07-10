@@ -22,11 +22,11 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/scss/_variables.scss",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/ionicons/dist/css/ionicons.min.css",
-              "node_modules/icheck/skins/square/blue.css",
-              "src/scss/_variables.scss"
+              "node_modules/icheck/skins/square/blue.css"
+
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
