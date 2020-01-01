@@ -1,4 +1,4 @@
-# **THIS REPOSITORY IS DISCONTINUED, THE NEW VERSION IS IN  this repository is discontinued, the new version is in https://github.com/csotomon/angularAdminLTE/(https://github.com/csotomon/angularAdminLTE/)**
+# **THIS REPOSITORY IS DISCONTINUED, THE NEW VERSION IS IN  this repository is discontinued, the new version is in [https://github.com/csotomon/angularAdminLTE/](https://github.com/csotomon/angularAdminLTE/)**
 ======
 
 **THE 3.0.0 VERSION IS UNDER DEVELOPMENT, CHECK [V3.0.0 BRANCH](https://github.com/csotomon/Angular2-AdminLTE/tree/v3.0.0)**
