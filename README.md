@@ -1,3 +1,5 @@
+# DEPRECATED
+
 # **THIS REPOSITORY IS DISCONTINUED, THE NEW VERSION IS IN [https://github.com/csotomon/angularAdminLTE/](https://github.com/csotomon/angularAdminLTE/)**
 ============
 
