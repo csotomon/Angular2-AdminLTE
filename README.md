@@ -1,3 +1,6 @@
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 # DEPRECATED
 
 # **THIS REPOSITORY IS DISCONTINUED, THE NEW VERSION IS IN [https://github.com/csotomon/angularAdminLTE/](https://github.com/csotomon/angularAdminLTE/)**
